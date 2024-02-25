@@ -24,7 +24,8 @@ RUN apk add \
     git clone https://github.com/brokenchair635/emacsd.git /root/.emacs.d/ && \
     apk del \
     autoconf \
-    texinfo
-RUN apk upgrade libcurl
+    texinfo && \
+    apk upgrade \
+    libcurl
 
 CMD ["/bin/sh"]
