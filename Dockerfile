@@ -26,4 +26,6 @@ RUN apk add \
     autoconf \
     texinfo
 
-CMD ["/bin/sh"]
+WORKDIR /root/
+
+CMD ["emacs"]
