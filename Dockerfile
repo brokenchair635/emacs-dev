@@ -25,5 +25,6 @@ RUN apk add \
     apk del \
     autoconf \
     texinfo
+RUN apk upgrade libcurl
 
 CMD ["/bin/sh"]
